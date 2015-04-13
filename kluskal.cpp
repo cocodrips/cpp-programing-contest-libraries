@@ -58,7 +58,7 @@ int main(){
 
     int cost = kluskal(es, n, n - 1);
     std::cout << cost << std::endl;
-
+    
     return 0;
 }
 

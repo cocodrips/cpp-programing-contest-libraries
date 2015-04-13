@@ -34,12 +34,12 @@ public:
 int main(int argc, char const *argv[])
 {
     int n = 10;
-    UnionFind *unionfind = new UnionFind(n);
+    UnionFind unionfind = UnionFind(n);
     for (int i = 0; i < 5; ++i){
-        unionfind -> unite(i, i+1);
+        unionfind.unite(i, i+1);
     }
-    std::cout<< unionfind -> same(1,2) << std::endl;
-    std::cout<< unionfind -> same(1,5) << std::endl;
-    std::cout<< unionfind -> same(7,8) << std::endl;
+    std::cout<< unionfind.same(1,2) << std::endl;
+    std::cout<< unionfind.same(1,5) << std::endl;
+    std::cout<< unionfind.same(7,8) << std::endl;
     return 0;
 }
